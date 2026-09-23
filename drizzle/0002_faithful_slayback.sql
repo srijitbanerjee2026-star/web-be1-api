@@ -1,0 +1,2 @@
+ALTER TABLE "events" ADD CONSTRAINT "events_capacity_positive" CHECK ("events"."capacity" > 0);--> statement-breakpoint
+ALTER TABLE "events" ADD CONSTRAINT "events_registrations_nonnegative" CHECK ("events"."current_registrations" >= 0);
